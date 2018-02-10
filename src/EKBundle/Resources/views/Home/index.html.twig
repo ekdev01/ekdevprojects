@@ -1,0 +1,32 @@
+{# src/EKBundle/Resources/views/index.html.twig #}
+{# Template Bundle #}
+
+{% extends "EKBundle::layout.html.twig" %}
+
+{% block title %} - Accueil{% endblock %}
+
+{% block content %}
+    <!-- Services Section -->
+    {% include 'EKBundle::services.html.twig' %}
+    <!-- /Services Section -->
+
+    <!-- Portfolio Grid Section -->
+   {% include 'EKBundle::portfolio.html.twig' %}
+    <!-- /Portfolio Grid Section -->
+
+    <!-- About Section -->
+    {% include 'EKBundle::about.html.twig' %}
+    <!-- /About Section -->
+
+    <!-- Team Section -->
+    {% include 'EKBundle::team.html.twig' %}
+    <!-- /Team Section -->
+
+    <!-- Clients Aside -->
+    {% include 'EKBundle::clients.html.twig' %}
+    <!-- /Clients Aside -->
+
+    <!-- Contact Section -->
+    {% include 'EKBundle::contact.html.twig' %}
+    <!-- /Contact Section -->
+{% endblock %}
